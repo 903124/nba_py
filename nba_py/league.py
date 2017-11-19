@@ -364,7 +364,31 @@ class _PlayerTrackingStats:
     def overall(self):
         return _api_scrape(self.json, 0)
 
+    
 
+class PlayerDrivesTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.Drives
+class PlayerDefenseTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.Defense   
+    
+class PlayerCatchShootTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.CatchShoot
+
+class PlayerPassingTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.Passing
+    
+class PlayerPossessionsTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.Possessions   
+    
+class PlayerPullUpShotTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.PullUpShot   
+    
 class PlayerSpeedDistanceTracking(_PlayerTrackingStats):
     """
     Statistics that measure the distance covered and the average speed of all
@@ -372,8 +396,27 @@ class PlayerSpeedDistanceTracking(_PlayerTrackingStats):
     by a player while on the court.
     """
     _pt_measure_type = constants.PtMeasureType.SpeedDistance
+    
+class PlayerReboundingTracking(_PlayerTrackingStats):
 
+    _pt_measure_type = constants.PtMeasureType.Rebounding   
+    
+class PlayerEfficiencyTracking(_PlayerTrackingStats):
 
+    _pt_measure_type = constants.PtMeasureType.Efficiency    
+    
+class PlayerElbowTouchTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.ElbowTouch   
+    
+class PlayerElbowTouchTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.PostTouch
+    
+class PlayerPaintTouchTracking(_PlayerTrackingStats):
+
+    _pt_measure_type = constants.PtMeasureType.PaintTouch    
+    
 class GameLog:
     _endpoint = 'leaguegamelog'
 
