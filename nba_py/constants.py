@@ -421,7 +421,17 @@ class MeasureType:
 
 
 class PtMeasureType:
+    Drives = 'Drives'
+    Defense = 'Defense'
+    CatchShoot = 'CatchShoot'
+    Passing = 'Passing'
+    Possessions = 'Possessions'
+    PullUpShot = 'PullUpShot'
     SpeedDistance = 'SpeedDistance'
+    Rebounding ='Rebounding'
+    Efficiency = 'Efficiency'
+    
+    
 
 
 class GroupQuantity:
