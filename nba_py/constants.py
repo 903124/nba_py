@@ -430,6 +430,9 @@ class PtMeasureType:
     SpeedDistance = 'SpeedDistance'
     Rebounding ='Rebounding'
     Efficiency = 'Efficiency'
+    ElbowTouch = 'ElbowTouch'
+    PostTouch = 'PostTouch'
+    PaintTouch = 'PaintTouch'
     
     
 
